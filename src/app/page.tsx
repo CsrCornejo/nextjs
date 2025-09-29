@@ -1,4 +1,6 @@
+
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,7 +25,15 @@ export default function Home() {
           <li className="tracking-[-.01em]">
             Hello World!
           </li>
+
         </ol>
+
+
+        <Link href="/blog" className="text-blue-600 underline">Go to Blog</Link>
+        <Link href="/products" className="text-blue-600 underline">Go to Products</Link>
+        <Link href="/articles/breaking-news-123?lang=en" className="text-blue-600 underline">Go to Breaking News (EN)</Link>
+        <Link href="/articles/breaking-news-123?lang=fr" className="text-blue-600 underline">Go to Breaking News (FR)</Link>
+        <Link href="/dashboardr" className="text-blue-600 underline">Go to Dashboard Rendering</Link>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
